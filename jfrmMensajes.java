@@ -60,6 +60,11 @@ public class jfrmMensajes extends javax.swing.JFrame {
         });
 
         jButton4.setText("Mensaje 4");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -132,6 +137,13 @@ public class jfrmMensajes extends javax.swing.JFrame {
                     "ejercicio 1",
                     JOptionPane.ERROR_MESSAGE);
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        Object [] opciones = {"Sí, gracias",
+        "No, gracias",
+        "Más..."};
+       int n = javax.swing.JOptionPane.showOptionDialog(this, "Se soluciono el problema?", "Soluciones", javax.swing.JOptionPane.YES_NO_OPTION , javax.swing.JOptionPane.QUESTION_MESSAGE , null, opciones, opciones[2]);
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
      * @param args the command line arguments
